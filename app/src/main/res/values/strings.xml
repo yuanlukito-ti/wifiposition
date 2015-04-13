@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Wifi Position</string>
+
+
+    <string name="title_section1">Wifi Stations</string>
+    <string name="title_section2">Dataset</string>
+    <string name="title_section3">My Position</string>
+    <string name="title_section4">About</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wifistations_textview">Current location:</string>
+    <string name="wifistations_button_save">Save</string>
+    <string name="wifistations_button_rescan">Rescan</string>
+    <string name="about_author">Wifi-based Positioning System\nYuan Lukito, S.Kom., M.Cs.\nFakultas Teknologi Informasi\nUniversitas Kristen Duta Wacana\n2015</string>
+    <string name="myposition_textview_position">Choose an Algorithm, we will do the magic for you!</string>
+    <string name="myposition_button_getposition">Get My Position!</string>
+    <string name="dataset_label_export">Export dataset from DB into CSV format (Ext. Storage):</string>
+    <string name="dataset_checkbox_export_location">Locations</string>
+    <string name="dataset_checkbox_export_wifistations">Wifi Stations</string>
+    <string name="dataset_checkbox_export_wifidata">Wifi Data</string>
+    <string name="dataset_checkbox_export_wifidatadetail">Wifi Data Details</string>
+    <string name="dataset_button_export">Export</string>
+    <string name="dataset_label_datamanagement">Data Management</string>
+    <string name="dataset_button_location">Location</string>
+    <string name="dataset_button_wifistation">Wifi Station</string>
+    <string name="dataset_button_wifidata">Wifi Data</string>
+    <string name="title_activity_location_data_set">Locations</string>
+    <string name="location_dataset_label">Locations Data</string>
+    <string name="location_dataset_additionalinfo">Hint: long tap on a row to delete</string>
+    <string name="textview_position_knnalgo">K-Nearest Neighbors</string>
+    <string name="textview_position_naivebayesalgo">Naive Bayes</string>
+    <string name="textview_position_randomalgo">Random</string>
+    <string name="button_wifistation_save_all_wifi_stations">Save Wifi Stations</string>
+    <string name="title_activity_wifi_station_data_set">Wifi Stations</string>
+    <string name="textview_wifistation_dataset_activity">WiFi Stations</string>
+    <string name="wifistation_dataset_additionalinfo">Hint: long tap on a row to delete</string>
+</resources>

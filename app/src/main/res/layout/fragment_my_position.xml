@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.ac.ukdw.ti.yuanlukito.wifiposition.MyPositionFragment"
+    android:padding="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/myposition_textview_position"
+            android:id="@+id/textViewMyPosition"
+            android:layout_centerVertical="true"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/myposition_button_getposition"
+            android:id="@+id/buttonGetMyPosition"
+            android:layout_below="@+id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/textViewMyPositionResult"
+            android:layout_above="@+id/textViewMyPosition"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_above="@+id/textViewMyPositionResult"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/location" />
+
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMyPosition"
+            android:id="@+id/radioGroup"
+            android:layout_alignLeft="@+id/buttonGetMyPosition"
+            android:layout_alignStart="@+id/buttonGetMyPosition">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_position_randomalgo"
+                android:id="@+id/radioButtonRandomAlgo" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_position_knnalgo"
+                android:id="@+id/radioButtonKnnAlgo"
+                android:checked="true" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_position_naivebayesalgo"
+                android:id="@+id/radioButtonNaiveBayesAlgo" />
+            </RadioGroup>
+
+    </RelativeLayout>
+</FrameLayout>

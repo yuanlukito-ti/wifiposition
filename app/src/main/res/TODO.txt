@@ -1,0 +1,25 @@
+TODO:
+- Implementasi Activity untuk Dataset WifiStation
+- Implementasi Activity untuk Dataset Wifi Data & Wifi Data Detail
+- Implementasi Export Dataset Wifi Data & Wifi Data Detail
+- Mengumpulkan data dari Lokasi-lokasi yang sudah ditentukan
+- Implementasi K-NN dan Naive Bayes
+- Ujicoba dan Tuning Algoritma
+
+ALUR KERJA APLIKASI & PENELITIAN
+- Tentukan lokasi-lokasi yang akan digunakan (Nama dan id/nomor urut).
+- Scan Wifi, simpan semua Access Point yang akan dijadikan referensi perhitungan lokasi.
+- Kumpulkan data dengan Scan Wifi, lalu simpan hasil scan tersebut untuk masing-masing lokasi.
+- Untuk setiap lokasi, data yang dikumpulkan bisa lebih dari satu (sebaiknya banyak).
+- Ujicoba dengan Algoritma KNN dan Naive Bayes.
+- Catat hasil pengujian, lakukan analisis.
+
+Sampai 27 Maret 2015
+- Implementasi Wifi Scan
+- Implementasi Dataset Location
+- Implementasi Export Dataset Wifi Station dan Location
+- Implementasi Pengumpulan data Wifi Station
+- Implementasi Pengumpulan Wifi Data
+- Memindahkan Broadcast Receiver ke MainActivity
+- Implementasi MyPosition
+- Implementasi Kerangka Class Algorithm (KNN dan Naive Bayes)

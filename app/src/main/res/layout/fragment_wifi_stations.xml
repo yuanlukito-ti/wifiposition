@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.ac.ukdw.ti.yuanlukito.wifiposition.WifiStationsFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifistations_textview"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerLocation"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifistations_button_save"
+            android:id="@+id/buttonSave"
+            android:layout_below="@+id/spinnerLocation"
+            android:layout_alignLeft="@+id/spinnerLocation"
+            android:layout_alignStart="@+id/spinnerLocation" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifistations_button_rescan"
+            android:id="@+id/buttonRescan"
+            android:layout_below="@+id/spinnerLocation"
+            android:layout_toRightOf="@+id/buttonSave"
+            android:layout_toEndOf="@+id/buttonSave" />
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listViewWifiStation"
+            android:layout_below="@+id/buttonSave"
+            android:layout_alignLeft="@+id/buttonSave"
+            android:layout_alignStart="@+id/buttonSave"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+</FrameLayout>

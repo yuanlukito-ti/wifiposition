@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.ac.ukdw.ti.yuanlukito.wifiposition.DatasetFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataset_label_export"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataset_checkbox_export_location"
+            android:id="@+id/cbLocation"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataset_checkbox_export_wifistations"
+            android:id="@+id/cbWifiStation"
+            android:layout_alignTop="@+id/cbLocation"
+            android:layout_centerHorizontal="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataset_checkbox_export_wifidata"
+            android:id="@+id/cbWifiData"
+            android:layout_below="@+id/cbLocation"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataset_checkbox_export_wifidatadetail"
+            android:id="@+id/cbWifiDataDetail"
+            android:layout_below="@+id/cbWifiStation"
+            android:layout_alignLeft="@+id/cbWifiStation"
+            android:layout_alignStart="@+id/cbWifiStation" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataset_button_export"
+            android:id="@+id/buttonExport"
+            android:layout_below="@+id/cbWifiData"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/dataset_label_datamanagement"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/buttonExport"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataset_button_location"
+            android:id="@+id/buttonLocation"
+            android:layout_below="@+id/textView4"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataset_button_wifistation"
+            android:id="@+id/buttonWifiStation"
+            android:layout_alignTop="@+id/buttonLocation"
+            android:layout_toRightOf="@+id/buttonLocation"
+            android:layout_toEndOf="@+id/buttonLocation" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataset_button_wifidata"
+            android:id="@+id/buttonWifiData"
+            android:layout_alignTop="@+id/buttonWifiStation"
+            android:layout_toRightOf="@+id/buttonWifiStation"
+            android:layout_toEndOf="@+id/buttonWifiStation" />
+
+    </RelativeLayout>
+</FrameLayout>
